@@ -1,0 +1,453 @@
+<!doctype html>
+<!--
+* Tabler - Premium and Open Source dashboard template with responsive and high quality UI.
+* @version 1.0.0-beta20
+* @link https://tabler.io
+* Copyright 2018-2023 The Tabler Authors
+* Copyright 2018-2023 codecalm.net Paweł Kuna
+* Licensed under MIT (https://github.com/tabler/tabler/blob/master/LICENSE)
+-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Filtr - Best Coffee Brand</title>
+    <!-- CSS files -->
+    <link href="./dist/css/tabler.min.css?1692870487" rel="stylesheet" />
+    <link href="./dist/css/tabler-flags.min.css?1692870487" rel="stylesheet" />
+    <link href="./dist/css/tabler-payments.min.css?1692870487" rel="stylesheet" />
+    <link href="./dist/css/tabler-vendors.min.css?1692870487" rel="stylesheet" />
+    <link href="./dist/css/demo.min.css?1692870487" rel="stylesheet" />
+    <link rel="stylesheet" href="src/style.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Bebas Neue", sans-serif;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Antic&display=swap');
+
+        p,
+        .btn,
+        button {
+            font-family: "Antic", sans-serif;
+
+        }
+    </style>
+</head>
+
+<body class="bg-white">
+    <script src="./dist/js/demo-theme.min.js?1692870487"></script>
+
+    <header class="navbar navbar-expand-md d-print-none"
+        style="box-shadow: none; margin-bottom: -100px; background-color: #0000006f;">
+        <div class="container-xl">
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu" aria-expanded="false"
+                aria-label="Toggle navigation" style="color: white; z-index: 1000;">
+
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512"
+                    xml:space="preserve" class="">
+                    <g>
+                        <path
+                            d="M128 102.4c0-14.138 11.462-25.6 25.6-25.6h332.8c14.138 0 25.6 11.462 25.6 25.6S500.538 128 486.4 128H153.6c-14.138 0-25.6-11.463-25.6-25.6zm358.4 128H25.6C11.462 230.4 0 241.863 0 256c0 14.138 11.462 25.6 25.6 25.6h460.8c14.138 0 25.6-11.462 25.6-25.6 0-14.137-11.462-25.6-25.6-25.6zm0 153.6H256c-14.137 0-25.6 11.462-25.6 25.6 0 14.137 11.463 25.6 25.6 25.6h230.4c14.138 0 25.6-11.463 25.6-25.6 0-14.138-11.462-25.6-25.6-25.6z"
+                            fill="#ffffff" opacity="1" data-original="#000000" class=""></path>
+                    </g>
+                </svg> </button>
+
+            <h1 class="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pe-0 pe-md-3">
+                <a href=".">
+                    <img src="src\static\logo-white-no-background.png" height="70">
+                </a>
+            </h1>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menu</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav text-white">
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="coffee.html">
+
+                                <span class="nav-link-title">
+                                    Coffee
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="about.html">
+
+                                <span class="nav-link-title">
+                                    About
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="contact.html">
+
+                                <span class="nav-link-title">
+                                    Contact
+                                </span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <section class="hero-section d-flex flex-column justify-content-center align-items-center text-white"
+        style="background-image: url(src/static/hero-img.png); height: 100vh; background-position: center; background-repeat: no-repeat; background-size: cover;">
+
+        <h1>Specialty coffee from over 50 roasters</h1>
+        <p>we list over 500 specialty coffees from 50 of the UK's best roasters. Broaden your knowledge and try
+            something new!</p>
+        <button class="btn" style="">Search all coffees</button>
+    </section>
+
+
+
+    <section class="filter-form-section d-flex flex-column justify-content-center align-items-center mb-5">
+
+        <div class="container w-75 text-dark bg-white rounded p-5 "
+            style="margin-top: -100px; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;">
+            <div class="container text-center">
+                <h1>What's your favorite coffee?</h1>
+                <p>Discover coffee by region, taste and processing method.</p>
+            </div>
+
+            <div class="container">
+                <form action="" class="container row">
+                    <div class="col-lg-3">
+                        <select type="text" placeholder="Taste" class="form-select">
+                            <option value="" disabled selected hidden>Region</option>
+
+                            <option value="1">Chuck Tesla</option>
+                            <option value="3">Paweł Kuna</option>
+                            <option value="2">Elon Musk</option>
+                            <option value="4">Nikola Tesla</option>
+
+                        </select>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <select type="text" class="form-select">
+                            <option value="" disabled selected hidden>Taste</option>
+
+                            <option value="1">Chuck Tesla</option>
+                            <option value="3">Paweł Kuna</option>
+                            <option value="2">Elon Musk</option>
+                            <option value="4">Nikola Tesla</option>
+
+                        </select>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <select type="text" class="form-select">
+                            <option value="" disabled selected hidden>Process</option>
+
+                            <option value="1">Chuck Tesla</option>
+                            <option value="3">Paweł Kuna</option>
+                            <option value="2">Elon Musk</option>
+                            <option value="4">Nikola Tesla</option>
+
+                        </select>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <input type="submit" class="btn w-100">
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="product-section mt-5 container-fluid  mt-5">
+        <div class="container d-flex flex-column justify-content-center align-items-center rounded-3 p-5"
+            style="height: fit-content;">
+
+            <div class="d-flex flex-row align-items-center w-100">
+                <h1 class="w-75">Search Results</h1>
+                <select class="form-select w-25">
+                    <option selected disabled hidden>Sort By</option>
+                    <option value="1">Popularity</option>
+                    <option value="2">Rating</option>
+                    <option value="3">Features</option>
+                </select>
+            </div>
+
+
+            <div class="container mt-4">
+                <div class="mt-2 products row">
+                    <div class="product-wrapper text-center col-lg-3">
+                        <a href="product.html">
+                            <img src="src/static/product-square.png" alt="">
+                            <div class="product-content bg-white rounded-3 mt-4 p-3">
+                                <h3>El Peresozo</h3>
+                                <p>Chocolate, black grape, Brazil nut</p>
+
+                                <div
+                                    class="product-content-footer d-flex flex-row align-items-center justify-content-between ">
+                                    <p class="m-0">From £xx.xx</p>
+                                    <button class="btn">More Info</button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="product-wrapper text-center col-lg-3">
+                        <a href="product.html">
+                            <img src="src/static/product-square.png" alt="">
+                            <div class="product-content bg-white rounded-3 mt-4 p-3">
+                                <h3>El Peresozo</h3>
+                                <p>Chocolate, black grape, Brazil nut</p>
+
+                                <div
+                                    class="product-content-footer d-flex flex-row align-items-center justify-content-between ">
+                                    <p class="m-0">From £xx.xx</p>
+                                    <button class="btn">More Info</button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="product-wrapper text-center col-lg-3">
+                        <a href="product.html">
+                            <img src="src/static/product-square.png" alt="">
+                            <div class="product-content bg-white rounded-3 mt-4 p-3">
+                                <h3>El Peresozo</h3>
+                                <p>Chocolate, black grape, Brazil nut</p>
+
+                                <div
+                                    class="product-content-footer d-flex flex-row align-items-center justify-content-between ">
+                                    <p class="m-0">From £xx.xx</p>
+                                    <button class="btn">More Info</button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="product-wrapper text-center col-lg-3">
+                        <a href="product.html">
+                            <img src="src/static/product-square.png" alt="">
+                            <div class="product-content bg-white rounded-3 mt-4 p-3">
+                                <h3>El Peresozo</h3>
+                                <p>Chocolate, black grape, Brazil nut</p>
+
+                                <div
+                                    class="product-content-footer d-flex flex-row align-items-center justify-content-between ">
+                                    <p class="m-0">From £xx.xx</p>
+                                    <button class="btn">More Info</button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mt-5 products row">
+                    <div class="product-wrapper text-center col-lg-3">
+                        <a href="product.html">
+                            <img src="src/static/product-square.png" alt="">
+                            <div class="product-content bg-white rounded-3 mt-4 p-3">
+                                <h3>El Peresozo</h3>
+                                <p>Chocolate, black grape, Brazil nut</p>
+
+                                <div
+                                    class="product-content-footer d-flex flex-row align-items-center justify-content-between ">
+                                    <p class="m-0">From £xx.xx</p>
+                                    <button class="btn">More Info</button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="product-wrapper text-center col-lg-3">
+                        <a href="product.html">
+                            <img src="src/static/product-square.png" alt="">
+                            <div class="product-content bg-white rounded-3 mt-4 p-3">
+                                <h3>El Peresozo</h3>
+                                <p>Chocolate, black grape, Brazil nut</p>
+
+                                <div
+                                    class="product-content-footer d-flex flex-row align-items-center justify-content-between ">
+                                    <p class="m-0">From £xx.xx</p>
+                                    <button class="btn">More Info</button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="product-wrapper text-center col-lg-3">
+                        <a href="product.html">
+                            <img src="src/static/product-square.png" alt="">
+                            <div class="product-content bg-white rounded-3 mt-4 p-3">
+                                <h3>El Peresozo</h3>
+                                <p>Chocolate, black grape, Brazil nut</p>
+
+                                <div
+                                    class="product-content-footer d-flex flex-row align-items-center justify-content-between ">
+                                    <p class="m-0">From £xx.xx</p>
+                                    <button class="btn">More Info</button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="product-wrapper text-center col-lg-3">
+                        <a href="product.html">
+                            <img src="src/static/product-square.png" alt="">
+                            <div class="product-content bg-white rounded-3 mt-4 p-3">
+                                <h3>El Peresozo</h3>
+                                <p>Chocolate, black grape, Brazil nut</p>
+
+                                <div
+                                    class="product-content-footer d-flex flex-row align-items-center justify-content-between ">
+                                    <p class="m-0">From £xx.xx</p>
+                                    <button class="btn">More Info</button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact-form-section container-fluid  mt-5">
+        <div class="container d-flex flex-column justify-content-center align-items-center rounded-3 "
+            style=" background-image: url(src/static/Background2.png); padding: 60px 40px; height: fit-content; background-position: center; background-repeat: no-repeat; background-size: cover;">
+
+            <div class="container w-lg-75 p-5 text-center rounded-3"
+                style="background-color: rgba(255, 255, 255, 0.667);">
+                <h1>Get Updates to Your Inbox</h1>
+                <p>Receive personalised updates of new coffees to your inbox</p>
+
+                <div class="container">
+                    <form action="" class="container row">
+                        <div class="col-lg-4 mb-3">
+                            <select type="text" placeholder="Taste" class="form-select">
+                                <option value="" disabled selected hidden>Region</option>
+
+                                <option value="1">Chuck Tesla</option>
+                                <option value="3">Paweł Kuna</option>
+                                <option value="2">Elon Musk</option>
+                                <option value="4">Nikola Tesla</option>
+
+                            </select>
+                        </div>
+
+                        <div class="col-lg-4 mb-3">
+                            <select type="text" class="form-select">
+                                <option value="" disabled selected hidden>Taste</option>
+
+                                <option value="1">Chuck Tesla</option>
+                                <option value="3">Paweł Kuna</option>
+                                <option value="2">Elon Musk</option>
+                                <option value="4">Nikola Tesla</option>
+
+                            </select>
+                        </div>
+
+                        <div class="col-lg-4 mb-3">
+                            <select type="text" class="form-select">
+                                <option value="" disabled selected hidden>Process</option>
+
+                                <option value="1">Chuck Tesla</option>
+                                <option value="3">Paweł Kuna</option>
+                                <option value="2">Elon Musk</option>
+                                <option value="4">Nikola Tesla</option>
+
+                            </select>
+                        </div>
+
+
+                        <div class="col-lg-4 mb-3">
+                            <input class="form-control" type="text" placeholder="Your Name">
+                        </div>
+
+                        <div class="col-lg-4 mb-3">
+                            <input class="form-control" type="email" placeholder="Your Email">
+                        </div>
+
+                        <div class="col-lg-12 row mb-3 d-flex align-items-center mt-4">
+                            <input class="btn col-lg-4" type="submit">
+                            <a href="" class="text-center col-lg-5 m-0">Update my existing subscription</a>
+
+                        </div>
+
+
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section style="height: 120px;"></section>
+
+    <footer class="container-fluid mt-5 py-lg-3"
+        style=" position: fixed; bottom: 0;  background-color: rgba(0, 0, 0, 0.5);">
+        <div class="container row ">
+            <div class="col-6 gap-3">
+                <svg id="facebook" xmlns="http://www.w3.org/2000/svg" width="24" height="23.855"
+                    viewBox="0 0 24 23.855">
+                    <path id="Path_2" data-name="Path 2"
+                        d="M24,12.073A12.01,12.01,0,0,1,13.87,23.928V15.565h2.789l.531-3.46H13.87V9.86a1.73,1.73,0,0,1,1.95-1.869h1.509V5.045a18.392,18.392,0,0,0-2.679-.234c-2.734,0-4.52,1.657-4.52,4.656V12.1H7.091v3.46H10.13v8.363A12,12,0,1,1,24,12.073Z"
+                        transform="translate(0 -0.073)" fill="#fff" />
+                </svg>
+
+                <svg id="instagram" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path id="Path_3" data-name="Path 3"
+                        d="M12,2.162c3.2,0,3.584.012,4.849.07a5.294,5.294,0,0,1,3.608,1.311,5.259,5.259,0,0,1,1.311,3.608c.058,1.265.07,1.645.07,4.849s-.012,3.584-.07,4.849a5.32,5.32,0,0,1-1.311,3.608,5.258,5.258,0,0,1-3.608,1.311c-1.265.058-1.645.07-4.849.07s-3.584-.012-4.849-.07a5.358,5.358,0,0,1-3.608-1.311,5.289,5.289,0,0,1-1.311-3.608c-.058-1.265-.07-1.645-.07-4.849s.012-3.584.07-4.849A5.338,5.338,0,0,1,3.543,3.543,5.271,5.271,0,0,1,7.151,2.232C8.416,2.174,8.8,2.162,12,2.162M12,0C8.741,0,8.332.014,7.052.072A7.416,7.416,0,0,0,2.014,2.014,7.4,7.4,0,0,0,.072,7.052C.014,8.332,0,8.741,0,12s.014,3.668.072,4.948a7.424,7.424,0,0,0,1.942,5.038,7.41,7.41,0,0,0,5.038,1.942C8.332,23.986,8.741,24,12,24s3.668-.014,4.948-.072a7.421,7.421,0,0,0,5.038-1.942,7.4,7.4,0,0,0,1.942-5.038C23.986,15.668,24,15.259,24,12s-.014-3.668-.072-4.948a7.419,7.419,0,0,0-1.942-5.038A7.417,7.417,0,0,0,16.948.072C15.668.014,15.259,0,12,0Z"
+                        transform="translate(0 0)" fill="#fff" />
+                    <path id="Path_4" data-name="Path 4"
+                        d="M12,5.838A6.162,6.162,0,1,0,18.162,12,6.162,6.162,0,0,0,12,5.838ZM12,16a4,4,0,1,1,4-4A4,4,0,0,1,12,16Z"
+                        transform="translate(0 0)" fill="#fff" />
+                    <circle id="Ellipse_2" data-name="Ellipse 2" cx="1.44" cy="1.44" r="1.44"
+                        transform="translate(16.966 4.154)" fill="#fff" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path id="linkedin_circle"
+                        d="M12,3A12,12,0,1,0,24,15,12,12,0,0,0,12,3ZM8.344,21.293H5.421V11.9H8.344ZM6.879,10.6a1.7,1.7,0,1,1,1.7-1.7A1.7,1.7,0,0,1,6.879,10.6Zm12.4,10.688H16.36v-4.57c0-1.088-.021-2.491-1.521-2.491-1.521,0-1.751,1.186-1.751,2.414V21.3H10.172V11.9h2.8v1.284h.035a3.072,3.072,0,0,1,2.763-1.521c2.958,0,3.5,1.947,3.5,4.479v5.156Z"
+                        transform="translate(0 -3)" fill="#fff" />
+                </svg>
+
+
+            </div>
+
+            <div class="col-6">
+                <p class="m-0">info@yourdomain.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Libs JS -->
+    <!-- Tabler Core -->
+    <script src="./dist/js/tabler.min.js?1695847769" defer></script>
+    <script src="./dist/js/demo.min.js?1695847769" defer></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
