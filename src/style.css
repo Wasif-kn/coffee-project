@@ -20,6 +20,20 @@ a {
 
 }
 
+
+.hero-section {
+    background-image: url(static/hero-img.png) !important;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-section-wrapper {
+    margin-top: -280px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+
 .contact-form-section a {
     text-decoration: underline;
     color: #F98D67;
@@ -100,6 +114,7 @@ a {
 
 .product-details-section h1 {
     font-size: 30px;
+    line-height: 30px;
 }
 
 .product-details-section h3 {
@@ -156,12 +171,82 @@ footer p {
     transition-duration: 400ms;
 }
 
-.product-wrapper:hover .product-content-footer .btn{
+.product-wrapper:hover .product-content-footer .btn {
     background-color: #F98D67;
     transition-duration: 400ms;
     color: white;
 }
 
+.navbar-toggler:not(.collapsed)::before,
+.navbar-toggler.collapsed::after {
+    color: white;
+    /* Sets the icon color of both states (collapsed/expanded) */
+}
+
+.navbar-toggler {
+    color: white;
+    z-index: 1000;
+}
+
+.filter-form-section-wrapper {
+    margin-top: -100px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+
+.contact-form-section-wrapper {
+    background-image: url(static/Background2.png);
+    padding: 60px 40px;
+    height: fit-content;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.product-section-top{
+        background-image: url(static/Background.png);
+
+}
+.product-section-wrapper {
+    background-image: url(static/Background.png);
+    height: fit-content;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-form-section-inner {
+    background-color: rgba(255, 255, 255, 0.667);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    box-shadow: none !important;
+    margin-bottom: -100px;
+    background-color: #0000006f !important;
+}
+
+.product-details-section .filter-form-section-wrapper{
+    width: 65%;
+}
+
+.about-section-wrapper p{
+    font-size: 18px;
+}
+
+.spacer{
+    height: 120px;
+}
+
+.product-section-desktop, .product-section-wrapper{
+    height: fit-content;
+}
 @media screen and (max-width: 600px) {
 
     h1,
@@ -250,10 +335,7 @@ footer p {
         flex-direction: row-reverse;
     }
 }
-
-
-.navbar-toggler:not(.collapsed)::before,
-.navbar-toggler.collapsed::after {
-    color: white;
-    /* Sets the icon color of both states (collapsed/expanded) */
-}
+@media screen and (max-width: 991px) {
+body > section.product-details-section.d-flex.flex-column.justify-content-center.align-items-center.mb-5 > div > div > div.col-lg-6.left > p{
+    display: none;
+}}

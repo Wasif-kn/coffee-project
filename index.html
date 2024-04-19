@@ -50,12 +50,11 @@
 <body class="bg-white">
     <script src="./dist/js/demo-theme.min.js?1692870487"></script>
 
-    <header class="navbar navbar-expand-md d-print-none"
-        style="box-shadow: none; margin-bottom: -100px; background-color: #0000006f;">
+    <header class="navbar navbar-expand-md d-print-none">
         <div class="container-xl">
             <button class="navbar-toggler collapsed" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu" aria-expanded="false"
-                aria-label="Toggle navigation" style="color: white; z-index: 1000;">
+                aria-label="Toggle navigation"   >
 
                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
                     width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512"
@@ -116,20 +115,18 @@
         </div>
     </header>
 
-    <section class="hero-section d-flex flex-column justify-content-center align-items-center text-white"
-        style="background-image: url(src/static/hero-img.png); height: 100vh; background-position: center; background-repeat: no-repeat; background-size: cover;">
+    <section class="hero-section d-flex flex-column justify-content-center align-items-center text-white">
 
         <h1>Specialty coffee from over 50 roasters</h1>
         <p>Browse Specialty Coffee from the UK's leading coffee roasters.</p>
-        <button class="btn" style="">Search all coffees</button>
+        <button class="btn">Search all coffees</button>
     </section>
 
 
 
     <section class="filter-form-section d-flex flex-column justify-content-center align-items-center mb-5">
 
-        <div class="container w-75 text-dark bg-white rounded p-5 "
-            style="margin-top: -100px; box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;">
+        <div class="container filter-form-section-wrapper w-75 text-dark bg-white rounded p-5 ">
             <div class="container text-center">
                 <h1>What's your favorite coffee?</h1>
                 <p>Discover coffee by region, taste and processing method.</p>
@@ -184,13 +181,11 @@
     </section>
 
 
-    <section class="product-section container-fluid  mt-5">
-        <div class="container d-flex flex-column justify-content-center align-items-center rounded-3  p-5"
-            style="background-image: url(src/static/Background.png); height: fit-content; background-position: center; background-repeat: no-repeat; background-size: cover;">
-            <div class="product-section-desktop container  flex-column justify-content-center align-items-center rounded-3 p-5"
-                style="height: fit-content;">
-                <h1>New Coffees</h1>
-                <p>Discover the most recently added coffee.</p>
+    <section class="product-section   container-fluid  mt-5">
+        <div class="container product-section-top d-flex flex-column justify-content-center align-items-center rounded-3  p-5">
+            <div class="product-section-desktop container  flex-column justify-content-center align-items-center rounded-3 p-5">
+                <h1>Trending Coffees</h1>
+                <p>Discover the most viewed coffee in the last 24 hours.</p>
 
                 <div class="container mt-4">
                     <div class="products row">
@@ -268,8 +263,8 @@
 
             <div class="container product-section-mobile" id="carousel-indicators">
                 <div class="text-center carousel slide" data-bs-ride="carousel">
-                    <h1>New Coffees</h1>
-                    <p>Discover the most recently added coffee.</p>
+                    <h1>Trending Coffees</h1>
+                    <p>Discover the most viewed coffee in the last 24 hours.</p>
 
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carousel-indicators" data-bs-slide-to="0"
@@ -374,8 +369,7 @@
 
 
     <section class="product-section container-fluid  mt-5">
-        <div class="product-section-desktop container  flex-column justify-content-center align-items-center rounded-3 p-5"
-            style="height: fit-content;">
+        <div class="product-section-desktop container  flex-column justify-content-center align-items-center rounded-3 p-5">
             <h1>New Coffees</h1>
             <p>Discover the most recently added coffee.</p>
 
@@ -558,11 +552,9 @@
 
 
     <section class="contact-form-section container-fluid  mt-5">
-        <div class="container d-flex flex-column justify-content-center align-items-center rounded-3 "
-            style=" background-image: url(src/static/Background2.png); padding: 60px 40px; height: fit-content; background-position: center; background-repeat: no-repeat; background-size: cover;">
+         <div class="container contact-form-section-wrapper d-flex flex-column justify-content-center align-items-center rounded-3">
 
-            <div class="container w-lg-75 p-5 text-center rounded-3"
-                style="background-color: rgba(255, 255, 255, 0.667);">
+            <div class="container contact-form-section-inner w-lg-75 p-5 text-center rounded-3">
                 <h1>Get Updates to Your Inbox</h1>
                 <p>Receive personalised updates of new coffees to your inbox</p>
 
@@ -631,10 +623,10 @@
 
 
 
-    <section style="height: 120px;"></section>
+        <section class="spacer"></section>
 
-    <footer class="container-fluid mt-5 py-lg-3"
-        style=" position: fixed; bottom: 0;  background-color: rgba(0, 0, 0, 0.5);">
+
+    <footer class="container-fluid mt-5 py-lg-3">
         <div class="container row ">
             <div class="col-6 gap-3">
                 <svg id="facebook" xmlns="http://www.w3.org/2000/svg" width="24" height="23.855"
