@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 .btn,
 button {
     background-color: #F98D67;
@@ -43,6 +47,7 @@ a {
 .contact-form-section h1 {
     font-size: 40px;
 }
+
 
 .contact-form-section p,
 .product-section p {
@@ -116,6 +121,20 @@ a {
     font-size: 30px;
     line-height: 30px;
 }
+
+
+.contact-us-form-section h1 {
+    font-size: 40px;
+    line-height: 30px;
+    margin-bottom: 14px;
+}
+
+
+.contact-us-form-section fieldset {
+    width: 50%;
+    margin: auto;
+}
+
 
 .product-details-section h3 {
     font-size: 16px;
@@ -202,10 +221,11 @@ footer p {
     background-size: cover;
 }
 
-.product-section-top{
-        background-image: url(static/Background.png);
+.product-section-top {
+    background-image: url(static/Background.png);
 
 }
+
 .product-section-wrapper {
     background-image: url(static/Background.png);
     height: fit-content;
@@ -232,21 +252,23 @@ header {
     background-color: #0000006f !important;
 }
 
-.product-details-section .filter-form-section-wrapper{
+.product-details-section .filter-form-section-wrapper {
     width: 65%;
 }
 
-.about-section-wrapper p{
+.about-section-wrapper p {
     font-size: 18px;
 }
 
-.spacer{
+.spacer {
     height: 120px;
 }
 
-.product-section-desktop, .product-section-wrapper{
+.product-section-desktop,
+.product-section-wrapper {
     height: fit-content;
 }
+
 @media screen and (max-width: 600px) {
 
     h1,
@@ -259,6 +281,14 @@ header {
     h5,
     h6 {
         line-height: 20px;
+    }
+
+    .contact-us-form-section fieldset {
+        width: 95%;
+        margin: 0 !important;
+    }
+    .contact-us-form-section {
+        width: 95%;
     }
 
 
@@ -335,7 +365,9 @@ header {
         flex-direction: row-reverse;
     }
 }
+
 @media screen and (max-width: 991px) {
-body > section.product-details-section.d-flex.flex-column.justify-content-center.align-items-center.mb-5 > div > div > div.col-lg-6.left > p{
-    display: none;
-}}
+    body>section.product-details-section.d-flex.flex-column.justify-content-center.align-items-center.mb-5>div>div>div.col-lg-6.left>p {
+        display: none;
+    }
+}
