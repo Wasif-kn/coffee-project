@@ -54,11 +54,11 @@ a {
     font-size: 16px;
 }
 
-/* .contact-form-section .btn{
-    background-color: transparent;
-    border: 1px solid #F98D67;
+.contact-form-section .btn{
+    background-color: white;
+    border: 3px solid #F98D67;
     color: black;
-} */
+}
 
 
 .hero-section h1 {
@@ -95,10 +95,12 @@ a {
 
 .product-section .product-content h3 {
     font-size: 22px;
+    height: 4em;
 }
 
 .product-section .product-content p {
     font-size: 14px;
+    height: 2em;
 }
 
 
@@ -178,8 +180,27 @@ footer p {
 
 }
 
+
+.square-image-wrapper {
+    width: 100%; /* Ensure it takes full width of the parent container */
+    position: relative; /* Needed for absolutely positioned children */
+    overflow: hidden; /* Hide any overflowing content */
+    padding-top: 100%; /* Sets the height equal to the width */
+}
+
+.square-image-wrapper img {
+    position: absolute; /* Position the image absolutely */
+    width: 100%; /* Ensure the image takes full width of its container */
+    height: 100%; /* Ensure the image takes full height of its container */
+    object-fit: cover; /* Cover the entire container while maintaining aspect ratio */
+    top: 0; /* Align the top of the image */
+    left: 0; /* Align the left of the image */
+}
+
+
 .product-content h3 {
     margin: 0;
+    height: 4em;
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -188,6 +209,7 @@ footer p {
 .product-wrapper:hover .product-content h3 {
     background-color: #F98D67;
     transition-duration: 400ms;
+    height: 4em;
 }
 
 .product-wrapper:hover .product-content-footer .btn {
@@ -213,7 +235,8 @@ footer p {
 }
 
 .contact-form-section-wrapper {
-    background-image: url(static/Background2.png);
+    /*background-image: url(static/Background2.png);*/
+    background-color: #F98D67;
     padding: 60px 40px;
     height: fit-content;
     background-position: center;
@@ -235,7 +258,7 @@ footer p {
 }
 
 .contact-form-section-inner {
-    background-color: rgba(255, 255, 255, 0.667);
+    background-color: rgba(255, 255, 255, 0.337);
 }
 
 footer {
@@ -269,6 +292,15 @@ header {
     height: fit-content;
 }
 
+.offcanvas{
+    width: 65% !important;
+    background: #ffffffe0;
+}
+
+.nav-link-title{
+    font-size: 20px;
+    font-weight: 600;
+}
 @media screen and (max-width: 600px) {
 
     h1,
@@ -311,7 +343,9 @@ header {
     .carousel-indicators [data-bs-target] {
         background-color: gray !important;
         margin-top: 30px;
+        margin-bottom: -30px;
     }
+
 
     .carousel-indicators .active {
         background-color: #f98d67 !important;
@@ -370,4 +404,9 @@ header {
     body>section.product-details-section.d-flex.flex-column.justify-content-center.align-items-center.mb-5>div>div>div.col-lg-6.left>p {
         display: none;
     }
+}
+
+body > section.contact-form-section.container-fluid > div > div > div > form > div.col-lg-12.row.mb-3.d-flex.align-items-center.mt-4{
+    width: 97%;
+    margin-left: 1px;
 }
