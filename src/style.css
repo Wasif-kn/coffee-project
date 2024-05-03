@@ -8,6 +8,7 @@ button {
     color: white;
     border: none;
     border-radius: 0;
+    font-size: 18px;
 }
 
 .btn:hover,
@@ -56,6 +57,7 @@ a {
 
 .contact-form-section .btn{
     background-color: white;
+    font-size: 18px;
     border: 3px solid #F98D67;
     color: black;
 }
@@ -84,9 +86,9 @@ a {
 
 
 .product-section .product-content-footer .btn {
-    background-color: #F1F1F1;
-    font-size: 12px;
-    color: gray;
+    background-color: #f98d67;
+    font-size: 14px;
+    color: white;
     box-shadow: none;
     border: none;
     border-radius: 100px;
