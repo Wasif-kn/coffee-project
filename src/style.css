@@ -4,11 +4,11 @@ body {
 
 .btn,
 button {
-    background-color: #F98D67;
-    color: white;
+    background-color: #F98D67 !important;
+    color: white !important; 
     border: none;
     border-radius: 0;
-    font-size: 18px;
+    font-size: 18px !important;
 }
 
 .btn:hover,
