@@ -278,8 +278,12 @@ header {
 }
 
 .product-details-section .filter-form-section-wrapper {
-    width: 65%;
+    width: 90%;
 }
+
+.product-content-footer{
+    justify-content: center !important;
+  }
 
 .about-section-wrapper p {
     font-size: 18px;
